@@ -1,0 +1,8 @@
+---
+title: "Website dos alunos"
+---
+
+Página para comunicação dos integrantes do Programa de Pós-Graduação em
+Estatística e Experimentação Agronômica da ESALQ-USP. Mantida e
+idealizada pelos representantes discentes do programa. Dúvidas ou
+sugestões fale conosco representantes-ppgeea@gmail.com

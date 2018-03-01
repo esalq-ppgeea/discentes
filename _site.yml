@@ -1,0 +1,22 @@
+name: "students-website"
+output_dir: "public"
+
+output:
+  html_document:
+    theme: journal
+    css: my_libs/custom.css
+    template: my_libs/custom_template.html
+
+navbar:
+  title: ""
+  right:
+    - text: "Início"
+      href: index.html
+    - text: "Sobre"
+      href: about.html
+    - text: "Equipe"
+      href: people.html
+    - text: "Calendário"
+      href: calendar.html
+    - text: "Arquivos"
+      href: files.html

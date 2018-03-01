@@ -1,0 +1,42 @@
+---
+title: "Atas de reunião"
+---
+
+As atas das reuniões mensais da CCP-EEA (Comissão Coordenadora do
+Programa em Estatística e Experimentação Agronômica) são redigidas pelas
+secretárias do serviço de pós-duação da ESALQ e enviadas por e-mail aos
+representantes da CCP-EEA. Essa página torna pública as ataas para os
+demais interessados.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+library(stringr)
+library(dplyr)
+
+files <- list.files("atas")
+
+table <- files %>%
+    str_replace(".(doc|pdf)", "") %>%
+    unique() %>%
+    str_split("-") %>%
+    do.call(rbind, .) %>%
+    as.data.frame() %>%
+    mutate("Documento" = str_to_title(V1),
+           "Numeração" = paste0(V2, "ª"),
+           "Data" = paste(V3, V4, V5, sep = "/"),
+           "Download" = sprintf(
+               "[DOC](%s) | [PDF](%s)",
+               paste0("atas/", str_subset(files, "doc")),
+               paste0("atas/", str_subset(files, "pdf"))),
+           V1 = NULL,
+           V2 = NULL,
+           V3 = NULL,
+           V4 = NULL,
+           V5 = NULL)
+
+
+knitr::kable(table,
+             align = rep("c", ncol(table)),
+             format = "html")
+
+```
