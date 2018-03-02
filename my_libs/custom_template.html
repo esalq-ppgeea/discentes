@@ -80,25 +80,22 @@ $endif$
 $if(theme)$
 <style type="text/css">
 h1 {
-  font-size: 34px;
-}
-h1.title {
   font-size: 38px;
 }
 h2 {
-  font-size: 30px;
+  font-size: 34px;
 }
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 h5 {
-  font-size: 16px;
+  font-size: 20px;
 }
 h6 {
-  font-size: 12px;
+  font-size: 16px;
 }
 .table th:not([align]) {
   text-align: left;
@@ -114,6 +111,8 @@ $endif$
 $for(css)$
 <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
 $endfor$
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
 
 </head>
 
@@ -412,21 +411,28 @@ $if(subtitle)$
 $endif$
 $for(author)$
 $if(author.name)$
-<h4 class="author">$author.name$</h4>
+<h4 class="author">$author.name$
 $if(author.affiliation)$
 <address class="author_afil">
-$author.affiliation$<br>$endif$
+$author.affiliation$$endif$
 $if(author.email)$
-<a class="author_email" href="mailto:#">$author.email$</a>
+(<a class="author_email" href="mailto:#">$author.email$</a>)
 </address>
 $endif$
+</h4>
 $else$
 <h4 class="author">$author$</h4>
 $endif$
 $endfor$
 $if(date)$
-<h4 class="date">$date$</h4>
+<h4 class="date">$date$ | <span class="tags-title"> tags:
+$for(tags)$
+  $tags$
+$endfor$
+</span>
+</h4>
 $endif$
+<br>
 $if(abstract)$
 <div class="abstract">
 <p class="abstract">Abstract</p>

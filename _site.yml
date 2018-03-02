@@ -2,10 +2,13 @@ name: "students-website"
 output_dir: "public"
 
 output:
-  html_document:
+  bookdown::html_document2:
     theme: journal
+    highlight: pygments
     css: my_libs/custom.css
     template: my_libs/custom_template.html
+    includes:
+        before_body: my_libs/before.html
 
 navbar:
   title: ""
