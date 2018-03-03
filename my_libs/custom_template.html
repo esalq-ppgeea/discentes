@@ -456,10 +456,6 @@ $endif$
 
 $body$
 
-$for(include-after)$
-$include-after$
-$endfor$
-
 $if(theme)$
 
 $if(toc_float)$
@@ -467,7 +463,12 @@ $if(toc_float)$
 </div>
 $endif$
 
+  <div class="push"></div>
 </div>
+
+$for(include-after)$
+$include-after$
+$endfor$
 
 <script>
 

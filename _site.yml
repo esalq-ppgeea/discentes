@@ -10,6 +10,7 @@ output:
     template: my_libs/custom_template.html
     includes:
         before_body: my_libs/before.html
+        after_body: my_libs/after.html
 
 navbar:
   title: ""

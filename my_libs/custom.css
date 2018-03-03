@@ -188,7 +188,7 @@ span.tags-title {
 
 
 /*------------------------------------------- */
-/* Imagem de cabeçalho */
+/* Configuração de cabeçalho */
 
 .header-image {
     width: 100vw;
@@ -231,4 +231,40 @@ table.header > tbody > tr {
     background-color: transparent;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
+}
+
+/*------------------------------------------- */
+/* Configuração de rodapé */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
+
+.footer, .push {
+  height: 50px;
+}
+
+footer {
+    margin: 20px 0px 0px 0px;
+    border-top: 2px solid #f3f3f3;
+    background: transparent;
+    color: var(--light2);
+    line-height: 2;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-icon {
+    fill: var(--light2);
+}
+
+.footer-icon:hover {
+    fill: var(--medium);
 }
