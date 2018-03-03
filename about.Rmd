@@ -1,26 +1,30 @@
 ---
-title: "Website dos alunos"
----
 
 O website dos alunos foi implementado como uma iniciativa dos
 representantes discentes de 2018 para potencializar a comunicação e
 divulgação dos compromissos relacionados ao Programa de Estatística e
-Experimentação Agronômica da ESALQ-USP.
+Experimentação Agronômica da ESALQ-USP ([PPGEEA-ESALQ][ppgeea]).
 
-Nesse canal nós divulgamos notícias como abertura de edital para bolsa
+Nesse canal nós divulgamos notícias como abertura de editais para bolsa
 de estudos, prazos para realização de matrícula, prêmios e homenagens
-recebidas pelos nossos alunos e docentes. Além disso, os compromissos
-pontuais do programa são organizados em uma agenda para melhorar a nossa
-organização.
+recebidas pelos nossos alunos e docentes entre outras. Além disso, os
+compromissos pontuais do programa são organizados em uma
+[agenda](calendar.html) para melhorar a nossa organização.
 
-Outro destaque do site é a página divulgação dos nossos seminários
-acadêmicos, que ocorrem periodicamente, ao menos, uma vez ao mês. Assim,
-a divulgação dos seminários é facilitada permitindo que alunos,
+Outro destaque do site é a página divulgação dos nossos
+[seminários acadêmicos](seminar.html), permitindo que alunos,
 pesquisadores e profissionais, além do nosso programa, tomem
-conhecimento das nossas pesquisas.
+conhecimento das nossas pesquisas incentivando a colaboração
+interdisciplinar. Os seminários ocorrem periodicamente, ao menos, uma
+vez ao mês.
 
 Sobre alguns aspectos técnicos, o site é totalmente estatíco, o que
-evita a necessidade da instalação de softwares dependentes para
+evita a necessidade da instalação de softwares em servidores para
 hospedagem. A construção é feita no software R com as funções do pacote
 `rmarkdown`, mesclando códigos R com a linguagem de marcação Markdown. O
-código-fonte é versionado com Git e hospedado no GitHub.
+código-fonte é versionado com Git e hospedado no GitHub
+(https://github.com/jreduardo/students-site).
+
+<!--------------------------------------------- -->
+<!-- Links -->
+[ppgeea]: http://www.esalq.usp.br/pg/programas/estatistica/

@@ -5,6 +5,7 @@ output:
   bookdown::html_document2:
     theme: journal
     highlight: pygments
+    number_sections: false
     css: my_libs/custom.css
     template: my_libs/custom_template.html
     includes:
@@ -19,7 +20,11 @@ navbar:
       href: about.html
     - text: "Equipe"
       href: people.html
-    - text: "Calendário"
-      href: calendar.html
     - text: "Arquivos"
       href: files.html
+    - text: "Agenda"
+      menu:
+        - text: "Calendário"
+          href: calendar.html
+        - text: "Seminários"
+          href: seminars.html

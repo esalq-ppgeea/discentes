@@ -1,0 +1,44 @@
+---
+title: Seminários Acadêmicos do PPGEEA
+---
+
+Os seminários acadêmicos do nosso programa objetivam a apresentação das
+pesquisas realizadas ou almejadas no nosso programa de pós-graduação,
+incentivando a discussão e colaboração dos alunos, professores e
+profissionais participantes.
+
+O formato dos seminários é dinâmico, com duração de até uma hora. Há
+um ministrante responsável pela apresentação da pesquisa ou tema tratado
+e um coordenador que conduzirá a discussão sobre o tema.
+
+O local e horário dos seminários costumam ser sala 311 do bloco de
+engenharias da ESALQ-USP e 14h00, respectivamente. Todavia, o horário e
+local podem mudar conforme demanda, fique atento a divulgação de cada
+[pŕoximo seminário](#proximo-seminario).
+
+### Próximo seminário ###
+
+> Título:
+>
+> Ministrante:
+>
+> Local:
+>
+> Horário:
+
+### Seminários anteriores ###
+
+
+```{r echo=FALSE}
+
+tab <- tibble::tribble(
+    ~"Data", ~"Ministrante", ~"Título", ~"Slides",
+    "", "", "", ""
+)
+
+knitr::kable(tab,
+             caption = "Histórico de seminários.",
+             align = c("l", "c", "l", "l"),
+             format = "html")
+
+```

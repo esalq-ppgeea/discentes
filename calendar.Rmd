@@ -1,11 +1,11 @@
 ---
-title: "Lista de compromissos"
+title: "Lista de Compromissos"
 ---
 
 Abaixo são listados os compromissos relacionados ao PPGEEA da ESALQ. Há
 a agenda para disciplinas, eventos, feriados, reuniões e
 seminários. Para os nossos seminários acadêmicos, confira também a
-página de divulgação [Seminários PPGEEA](seminarios.html).
+página de divulgação [Seminários PPGEEA](seminars.html).
 
 ---
 

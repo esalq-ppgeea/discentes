@@ -1,6 +1,25 @@
 ---
-title: "Atas de reunião"
+title: "Publicização de Documentos Importantes"
 ---
+
+## Informações do programa ##
+
+As informações oficiais do programa de pós-graduação em estatística e
+experimentação agronômica são disponibilizadas em sua
+[página oficial][ppgeea]. Aqui listamos alguns links importantes, bem
+como disponibilizamos um resumo sobre as normas para os candidatos de
+mestrado e doutorado:
+
+- Legislação:
+http://www.esalq.usp.br/pg/programas/estatistica/legislacao
+
+- Formulários e relatórios:
+http://www.esalq.usp.br/pg/programas/estatistica/formularios
+
+- Resumo das normas:
+[information.pdf](docs/information.pdf)
+
+## Atas de reunião ##
 
 As atas das reuniões mensais da CCP-EEA (Comissão Coordenadora do
 Programa em Estatística e Experimentação Agronômica) são redigidas pelas
@@ -15,7 +34,7 @@ library(dplyr)
 
 files <- list.files("atas")
 
-table <- files %>%
+docs <- files %>%
     str_replace(".(doc|pdf)", "") %>%
     unique() %>%
     str_split("-") %>%
@@ -29,14 +48,15 @@ table <- files %>%
                paste0("atas/", str_subset(files, "doc")),
                paste0("atas/", str_subset(files, "pdf"))),
            V1 = NULL,
-           V2 = NULL,
            V3 = NULL,
            V4 = NULL,
-           V5 = NULL)
+           V5 = NULL) %>%
+    arrange(desc(V2)) %>%
+    mutate(V2 = NULL)
 
-
-knitr::kable(table,
-             align = rep("c", ncol(table)),
+knitr::kable(docs,
+             caption = "Atas de reuniões da CCP-EEA.",
+             align = rep("c", ncol(docs)),
              format = "html")
 
 ```
