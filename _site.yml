@@ -23,6 +23,8 @@ navbar:
       href: people.html
     - text: "Arquivos"
       href: files.html
+    - text: "Notícias"
+      href: news.html
     - text: "Agenda"
       menu:
         - text: "Calendário"
