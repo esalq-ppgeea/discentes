@@ -1,0 +1,25 @@
+---
+title: "Novo canal de comunicação do PPGEEA"
+author:
+  - name: Eduardo Junior
+    email: jreduardo@usp.br
+post: true
+date: "12/03/2018"
+---
+
+É com grande prazer e satisfação que anunciamos o nosso novo canal de
+comunicação de assuntos relacionados ao Programa de Pós-graduação em
+Estatística e Experimentação Agronômica.
+
+Essa foi uma ideia que surgiu ainda no final de 2017, com o objetivo de
+facilitar e organizar a divulgação de notícias e documentos importantes,
+principalmente, para os discentes do programa, e hoje conseguimos
+colocá-la em prática.
+
+Neste sítio, vamos divulgar os
+[seminários acadêmicos](seminars.html) e
+[notícias gerais](news.html), bem como atualizar o
+[calendário](calendar.html) (com o horário das disciplinas, eventos,
+reuniões, etc.) e disponibilizar
+[documentos importantes](files.html). Portanto, fique atento às
+novidades!
