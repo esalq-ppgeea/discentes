@@ -14,6 +14,7 @@
 body {
     font-size: 22px;
     text-align: justify;
+    counter-reset: table;
 }
 
 a {
@@ -48,6 +49,12 @@ table {
     max-width: 100%;
     margin: auto;
     font-size: 90%;
+    margin-bottom: 20px;
+}
+
+table > caption::before {
+    counter-increment: table;
+    content: "Tabela " counter(table) ":";
 }
 
 thead > tr {
