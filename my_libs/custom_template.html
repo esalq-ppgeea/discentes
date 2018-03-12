@@ -425,11 +425,13 @@ $else$
 $endif$
 $endfor$
 $if(date)$
-<h4 class="date">$date$ | <span class="tags-title"> tags:
+<h4 class="date">$date$
+$if(tags)$ | <span class="tags-title"> tags:
 $for(tags)$
   $tags$
 $endfor$
 </span>
+$endif$
 </h4>
 $endif$
 <br>
