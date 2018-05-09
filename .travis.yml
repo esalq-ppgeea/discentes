@@ -1,0 +1,11 @@
+language: r
+cache: packages
+
+before_script:
+  - chmod +x ./deploy.sh
+
+script:
+  - Rscript -e "rmarkdown::render_site()"
+
+after_success:
+  - ./deploy.sh
