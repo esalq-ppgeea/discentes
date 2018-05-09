@@ -1,0 +1,7 @@
+Package: StudentsSite
+Title: Página dos Discentes no PPG em Estatística e Experimentação da ESALQ
+Version: 0.0.1
+Imports:
+  rmarkdown,
+  tidyverse,
+  bookdown

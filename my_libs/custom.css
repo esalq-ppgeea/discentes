@@ -1,0 +1,319 @@
+/*------------------------------------------- */
+/* Cores  */
+:root{
+    --dark: #072A30;
+    --medium: #103841;
+    --light2: #77969D;
+    --light: #AFC3C8;
+    --mygray: #c3c3c3;
+}
+
+/*------------------------------------------- */
+/* Estilos gerais */
+
+body {
+    font-size: 22px;
+    text-align: justify;
+    counter-reset: table;
+}
+
+a {
+    color: var(--medium);
+}
+
+a:hover {
+    color: var(--light2);
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    border-left: 5px solid var(--light);
+    background-color: #f8f8f8;
+}
+
+.footnotes {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/*------------------------------------------- */
+/* Tabelas */
+
+table {
+    width: 95%;
+    max-width: 100%;
+    margin: auto;
+    font-size: 90%;
+    margin-bottom: 20px;
+}
+
+table > caption::before {
+    counter-increment: table;
+    content: "Tabela " counter(table) ":";
+}
+
+thead > tr {
+    background-color: #fff;
+    border-top: 1px solid var(--medium);
+    border-bottom: 1px solid var(--medium);
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+tbody > tr:nth-last-child(1) {
+    border-bottom: 1px solid var(--medium);
+}
+
+td, th {
+    padding: 3px;
+}
+
+code {
+    font-size: 95%;
+}
+
+/*------------------------------------------- */
+/* Códigos */
+
+code, kbd, pre, samp {
+    font-family: "Ubuntu Mono", Monaco, monospace;
+}
+
+pre {
+    font-size: 18px;
+    color: #333333;
+    background-color: #f5f5f5;
+    border: 0px solid #cccccc;
+    border-radius: 0;
+}
+
+pre:not([class]) {
+    background-color: #e5e5e5;
+}
+
+/*------------------------------------------- */
+/* Título das páginas */
+
+h1.title {
+    text-align: center;
+    font-size: 46px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+h4.author {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.2px;
+}
+
+h4.author > a {
+    font-size: 24px;
+}
+
+h4.date {
+    text-align: center;
+    font-size: 26px;
+    /* line-height: 1.2px; */
+}
+
+span.tags-title {
+    font-size: 22px;
+}
+
+/*------------------------------------------- */
+/* Barra de navegação */
+
+.navbar {
+    background-color: var(--medium);
+    border-color: var(--medium);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: var(--light);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: solid 3px var(--dark);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: var(--light);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: solid 3px var(--light2);
+}
+
+.navbar-default .navbar-nav > .open > a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: var(--dark);
+    border-bottom: solid 3px var(--light2);
+}
+
+.dropdown-menu {
+    font-size: 18px;
+    background-color: var(--medium);
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    color: var(--light);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: solid 3px var(--dark);
+}
+
+.dropdown-menu > li > a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{
+    font-weight: bold;
+    color: var(--light2);
+    background-color: var(--dark);
+}
+
+
+/*------------------------------------------- */
+/* Configuração de cabeçalho */
+
+.header-image {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 300px;
+    margin-bottom: 10px;
+    left: 50%;
+    background-image: url("./images/background.png");
+    background-position:50% 50%;
+    background-size:cover;
+}
+
+h1.header {
+  text-align: left;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 40px;
+  color: var(--light);
+}
+
+#desc {
+  font-size: 28px;
+  color: var(--light2);
+}
+
+div.header {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+table.header {
+    margin-top: 20px;
+    margin-left: 4vw;
+    width: 60%;
+    algin: left;
+    border: 0px solid transparent;
+}
+
+table.header > tbody > tr {
+    background-color: transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+
+/*------------------------------------------- */
+/* Configuração de rodapé */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
+
+.footer, .push {
+  height: 50px;
+}
+
+footer {
+    margin: 20px 0px 0px 0px;
+    border-top: 2px solid #f3f3f3;
+    background: transparent;
+    color: var(--light2);
+    line-height: 2;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-icon {
+    fill: var(--light2);
+}
+
+.footer-icon:hover {
+    fill: var(--medium);
+}
+
+/*------------------------------------------- */
+/* Estilo para lista de posts (vindo de hugo-lithium) */
+.archive {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.3em;
+  text-align: left;
+  color: var(--medium);
+}
+
+div.archive::before {
+    content: "▸";
+    margin-left: -1em;
+    margin-top: 1mm;
+    position: absolute;
+}
+
+.archive-item {
+  margin: 5px 0 15px;
+  padding: 0;
+  font-size: 15px;
+}
+
+.archive-item-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: #222;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.archive-item-date {
+  color: #ccc;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 0;
+  display: block;
+}
