@@ -25,7 +25,7 @@ local podem mudar conforme demanda, fique atento a divulgação de cada
 >
 > **Local:** Prédio de Engenharia da ESALQ - Laboratório.
 >
-> **Data/Horário:** 17/11 (quinta-feira) das 14h00 às 17h00.
+> **Data/Horário:** 17/05 (quinta-feira) das 14h00 às 17h00.
 >
 > **Resumo:** Com o aumento da complexidade dos modelos empregados na
 > análise de dados, a inferência considerando-se a abordagem bayesiana
