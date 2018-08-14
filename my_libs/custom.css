@@ -54,8 +54,21 @@ blockquote {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary:visited,
 .btn-primary:disabled {
+    color: var(--light);
+    background-color: var(--medium);
+    border-color: var(--medium);
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open>.dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open>.dropdown-toggle.btn-primary.focus {
     color: var(--light);
     background-color: var(--medium);
     border-color: var(--medium);
