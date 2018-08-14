@@ -41,6 +41,26 @@ blockquote {
     line-height: 1;
 }
 
+.resumo {
+    font-size: 19px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--light2);
+    border-color: var(--light2);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:disabled {
+    color: var(--light);
+    background-color: var(--medium);
+    border-color: var(--medium);
+}
+
 /*------------------------------------------- */
 /* Tabelas */
 
@@ -131,7 +151,9 @@ span.tags-title {
 /*------------------------------------------- */
 /* Barra de navegação */
 
-.navbar {
+.navbar,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
     background-color: var(--medium);
     border-color: var(--medium);
 }
