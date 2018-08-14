@@ -41,6 +41,10 @@ blockquote {
     line-height: 1;
 }
 
+.resumo {
+    font-size: 19px;
+}
+
 /*------------------------------------------- */
 /* Tabelas */
 
