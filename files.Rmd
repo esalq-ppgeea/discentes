@@ -34,8 +34,9 @@ library(dplyr)
 
 files <- list.files("atas")
 
-docs <- files %>%
-    str_replace(".(doc|pdf)", "") %>%
+docs <-
+    files %>%
+    str_replace(".(docx|doc|pdf)", "") %>%
     unique() %>%
     str_split("-") %>%
     do.call(rbind, .) %>%
@@ -45,14 +46,10 @@ docs <- files %>%
            "Data" = paste(V3, V4, V5, sep = "/"),
            "Download" = sprintf(
                "[DOC](%s) | [PDF](%s)",
-               paste0("atas/", str_subset(files, "doc")),
-               paste0("atas/", str_subset(files, "pdf"))),
-           V1 = NULL,
-           V3 = NULL,
-           V4 = NULL,
-           V5 = NULL) %>%
+               paste0("atas/", str_subset(files, "do(c|cx)")),
+               paste0("atas/", str_subset(files, "pdf")))) %>%
     arrange(desc(V2)) %>%
-    mutate(V2 = NULL)
+    select(-starts_with("V"))
 
 knitr::kable(docs,
              caption = "Atas de reuniões da CCP-EEA.",
