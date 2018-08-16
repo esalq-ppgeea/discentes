@@ -9,7 +9,7 @@ sugestões fale conosco, representantes.ppgeea@gmail.com.
 
 Aproveite e explore nosso sítio eletrônico:
 
-<a href="./seminars.html" role="button" class="btn btn-primary btn-lg">Seminários discentes</a>
-<a href="./calendar.html" role="button" class="btn btn-primary btn-lg">Calendário acadêmico</a>
+<a href="./seminars.html" role="button" class="btn btn-primary btn-lg">Seminários acadêmicos</a>
+<a href="./calendar.html" role="button" class="btn btn-primary btn-lg">Calendário de atividades</a>
 <a href="./files.html"    role="button" class="btn btn-primary btn-lg">Arquivos importantes</a>
 <a href="./news.html"     role="button" class="btn btn-primary btn-lg">Postagens no site</a>
