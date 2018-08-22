@@ -19,15 +19,11 @@ navbar:
       href: index.html
     - text: "Sobre"
       href: about.html
-    - text: "Equipe"
-      href: people.html
     - text: "Arquivos"
       href: files.html
     - text: "Notícias"
       href: news.html
-    - text: "Agenda"
-      menu:
-        - text: "Calendário"
-          href: calendar.html
-        - text: "Seminários"
-          href: seminars.html
+    - text: "Calendário"
+      href: calendar.html
+    - text: "Seminários"
+      href: seminars.html
