@@ -23,7 +23,7 @@ local podem mudar conforme demanda, fique atento a divulgação de cada
 ### Próximo(s) Seminário(s) ###
 
 Em breve, divulgaremos os resumos dos seminários de setembro.
-Veja o nosso [./calendar.html](calendário) com os seminários e
+Veja o nosso [calendário](./calendar.html) com os seminários e
 atividades programadas para setembro. 
 
 ### Histórico dos seminários ###
