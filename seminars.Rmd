@@ -8,12 +8,20 @@ title: Seminários Acadêmicos do PPGEEA
 
 ---
 
-<strong style='color: #000'>Modelagem de capturas em peso
-inflacionadas de zeros no Baixo Rio Amazonas</strong>\
-[Júlio César Pereira](http://www.ppgpur.ufscar.br/corpodocente/julio-cesar-pereira) (UFSCar - Sorocaba)\
-**04/10 Quinta-feira (14h00)**
+<strong style='color: #000'>Métodos de Pesquisa e Elaboração de Questionários</strong>\
+[Denise Britz do N. Silva](https://docs.ufpr.br/~taconeli/)
+(ENCE/IBGE - Rio de Janeiro)\
+**18/10 Quinta-feira (10h00)**
 
-Neste trabalho desenvolvemos um modelo hierárquico bayesiano em três estágios para acomodar a inflação zero nas capturas resultantes da pesca comercial no Baixo Rio Amazonas. Inicialmente, modelamos o número de viagens de pesca (N), dado que N> 0 modelamos a probabilidade de sucesso na captura de certas espécies e finalmente, na terceira etapa, o peso capturado foi modelado.
+Várias das informações utilizadas na gestão pública, no desenvolvimento
+da ciência e no exercício da cidadania são provenientes de pesquisas
+amostrais ou censos. A necessidade de estatísticas de boa qualidade
+resulta na constante atenção aos métodos estatísticos para produção e
+análise da informação. Nesta palestra, apresenta-se uma introdução aos
+principais conceitos e métodos para o planejamento e a execução de
+pesquisas, bem como para a elaboração de instrumentos de coleta.
+Destaca-se, também, a importância do contínuo desenvolvimento de
+novos métodos estatísticos na área de pesquisas quantitativas.
 
 ---
 
@@ -23,6 +31,15 @@ Neste trabalho desenvolvemos um modelo hierárquico bayesiano em três estágios
 **11/10 Quinta-feira (14h00)**
 
 Neoteric ranked set sampling (NRSS) is a recently developed sampling plan, derived from the well-known ranked set sampling (RSS) scheme. In this work, we propose and evaluate the performance of five different alternatives of two-stage sampling designs based on NRSS. These approaches configure alternatives to some other two-stage sampling designs based on RSS. We conducted an extensive Monte Carlo simulation study comprising, besides the proposed estimators, RSS, NRSS and the usual double ranked set sampling scheme (DRSS).  The simulated results indicated that the new two-stage NRSS designs outperform their RSS-based counterparts, providing estimators for the population mean with lower mean square error. An application with data of the diameter and height of pine trees complements the study. 
+
+---
+
+<strong style='color: #000'>Modelagem de capturas em peso
+inflacionadas de zeros no Baixo Rio Amazonas</strong>\
+[Júlio César Pereira](http://www.ppgpur.ufscar.br/corpodocente/julio-cesar-pereira) (UFSCar - Sorocaba)\
+**04/10 Quinta-feira (14h00)**
+
+Neste trabalho desenvolvemos um modelo hierárquico bayesiano em três estágios para acomodar a inflação zero nas capturas resultantes da pesca comercial no Baixo Rio Amazonas. Inicialmente, modelamos o número de viagens de pesca (N), dado que N> 0 modelamos a probabilidade de sucesso na captura de certas espécies e finalmente, na terceira etapa, o peso capturado foi modelado.
 
 ---
 
@@ -39,14 +56,24 @@ tab <- tibble::tribble(
     "[link](http://www.leg.ufpr.br/~eduardojr/courses/seeb/)",
 
     "16/08/2018",
-    "Eduardo E. Ribeiro Jr",
+    "Eduardo Ribeiro Jr (ESALQ)",
     "Reparametrization of COM-Poisson Regression Models",
     "[link](./slides/RibeiroJr_16-08-18.pdf)",
 
     "23/08/2018",
-    "Rafael de Andrade Moral",
+    "Rafael Moral (Maynooth)",
     "Bivariate residual plots with simulation polygons",
-    "[link](./slides/Moral_23-08-18.pdf)"
+    "[link](./slides/Moral_23-08-18.pdf)",
+    
+    "04/10/2018",
+    "Júlio César Pereira (UFSCar)",
+    "Modelagem de capturas em peso inflacionadas de zeros no Baixo Rio Amazonas",
+    "--",
+    
+    "11/10/2018",
+    "César Augusto Taconelli (UFPR)",
+    "New two-stage sampling designs based on neoteric ranked set sampling",
+    "--"
     
 )
 
