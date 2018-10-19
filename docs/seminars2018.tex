@@ -1,0 +1,309 @@
+% Document class and options
+\documentclass[9pt, a5paper]{article}
+
+% Set margins
+\usepackage{geometry}
+\geometry{lmargin=2cm, rmargin=2cm, tmargin=2cm, bmargin=2cm}
+
+% Change default fonts
+\usepackage{mathpazo}
+
+% Customize ToC
+\usepackage[titles]{tocloft}
+\renewcommand\cftsecfont{\normalsize\itshape}
+\renewcommand\cftsecpagefont{\normalsize\bfseries}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% Mathematics environments
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amstext}
+
+% Language and hyphenation
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Hyper references
+\usepackage[linktocpage]{hyperref}
+\hypersetup{colorlinks=true,
+            urlcolor=blue,
+            linkcolor=teal}
+
+% Add blank pages
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+% Footnotes in bottom and with same number
+\usepackage[bottom]{footmisc}
+\usepackage{perpage}
+\MakePerPage{footnote}
+
+% Tables
+\usepackage{array}
+\usepackage{tabularx}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% General purposes
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Metadata
+\title{\fontsize{38}{32} \bfseries Seminários Acadêmicos}
+\author{Estatística e Experimentação Agronômica}
+\date{\small \url{https://esalq-ppgeea.github.io/discentes/seminars.html}}
+
+\begin{document}
+
+\maketitle
+\vspace{1cm}
+
+\begin{center}
+  \textbf{\large Edição 2018}
+\end{center}
+
+\vfill
+\hspace{0.08cm}
+\begin{minipage}{\textwidth}
+  \small
+  \begin{tabular}{L{1cm}L{3cm}L{1.42cm}L{3cm}}
+    \includegraphics[height=2cm]{logo-esalq} &
+    \scalebox{.8}[1.0]{Escola Superior de Agri--}\newline
+    \scalebox{.8}[1.0]{cultura ``Luiz de Queiroz''}\newline
+    \vspace{0.1cm}
+    \scalebox{.8}[1.0]{Departamento de}\newline
+    \scalebox{.8}[1.0]{Ciências Exatas} &
+    % -------------------------------------------
+    % -------------------------------------------
+    \includegraphics[height=2cm, width=1.8cm]{logo-ppgeea} &
+    \scalebox{.8}[1.0]{Programa de Pós-gra--}\newline
+    \scalebox{.8}[1.0]{duação em Estatística}\newline
+    \scalebox{.8}[1.0]{e Experimentação}\newline
+    \scalebox{.8}[1.0]{Agronômica}
+  \end{tabular}
+\end{minipage}
+
+
+\thispagestyle{empty}
+\afterpage{\blankpage}
+\clearpage
+
+%-------------------------------------------
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+%=======================================================================
+% Date, Authors, Title and Abstracts
+%=======================================================================
+
+%-----------------------------------------------------------------------
+% 17/05
+%-----------------------------------------------------------------------
+\addcontentsline{toc}{section}{(17/05)
+  Uso do Shiny para o ensino-aprendizagem de Inferência
+  Bayesiana}
+
+\begin{center}
+  {\footnotesize 17/05/2018 (Quinta-feira)}\\
+  \textbf{\large
+    Uso do Shiny para o ensino-aprendizagem de
+    Inferência Bayesiana}\\
+  Cristian Villegas\footnote{ESALQ/USP, contato:
+    \url{jreduardo@usp.br}},
+  Eduardo Ribeiro Jr\footnotemark[1] \&
+  Roseli Leandro\footnotemark[1]
+\end{center}
+
+ Com o aumento da complexidade dos modelos empregados na análise de
+ dados, a inferência considerando-se a abordagem bayesiana tem sido cada
+ vez mais utilizada em diferentes áreas de pesquisa. Com o objetivo
+ facilitar o ensino-aprendizagem da estatística bayesiana, cada dia mais
+ necessário, propõe-se este minicurso, que irá explorar conceitos
+ básicos tais como: distribuição a priori (informativas e não
+ informativas), função de verossimilhança, distribuição a posteriori, e
+ técnicas de amostragem Metropolis-Hastings e amostrador de Gibbs, com a
+ utilização do pacote R de código aberto R shiny
+ (\url{http://www.shiny.rstudio.com}) para elaboração de interfaces
+ interativas. O Shiny fornece uma estrutura elegante, poderosa e
+ estimulante para criar aplicativos web sem requerer conhecimento em
+ HTML, CSS ou JavaScript, propiciando a melhoria no processo de
+ ensino-aprendizado. Nesse minicurso serão abordados modelos lineares,
+ lineares generalizados e não lineares sob a perspectiva bayesiana, com
+ aplicações envolvendo dados reais de estudos experimentais. Os recursos
+ pra criação de interfaces interativas serão disponibilizados em um
+ pacote R para que possam ser utilizados i) por estudantes ou
+ entusiastas em estatística bayesiana, para o aprendizado; e ii) por
+ docentes ou responsáveis por cursos de estatística bayesiana, como
+ ferramenta complementar para o ensino.
+
+\clearpage
+
+%-----------------------------------------------------------------------
+% 16/08
+%-----------------------------------------------------------------------
+\addcontentsline{toc}{section}{(16/08)
+  Reparametrization of COM-Poisson Regression Models}
+
+\begin{center}
+  {\footnotesize 16/08/2018 (Quinta-feira)}\\
+  \textbf{\large
+    Reparametrization of COM-Poisson Regression Models}\\
+  Eduardo Ribeiro Jr\footnote{ESALQ/USP, contato:
+    \url{jreduardo@usp.br}}
+\end{center}
+
+In the analysis of count data often the equidispersion assumption is not
+suitable, hence the Poisson regression model is inappropriate. As a
+generalization of the Poisson distribution the COM-Poisson distribution
+can deal with under-, equi- and overdispersed count data. It is a member
+of the exponential family of distributions and has the Poisson and
+geometric distributions as special cases, as well as the Bernoulli
+distribution as a limiting case. In spite of the nice properties of the
+COM-Poisson distribution, its location parameter does not correspond to
+the expectation, which complicates the interpretation of regression
+models specified using this distribution. In this paper, we propose a
+straightforward reparametrization of the COM-Poisson distribution based
+on an approximation to the expectation of this distribution. The main
+advantage of our new parametrization is the straightforward
+interpretation of the regression coefficients in terms of the
+expectation of the count response variable, as usual in the context of
+generalized linear models. Furthermore, the estimation and inference for
+the new COM-Poisson regression model can be done based on the likelihood
+paradigm. We carried out simulation studies to verify the finite sample
+properties of the maximum likelihood estimators. The results from our
+simulation study show that the maximum likeli-hood estimators are
+unbiased and consistent for both regression and dispersion
+parameters. We observed that the empirical correlation between the
+regression and dispersion parameter estimators is close to zero, which
+suggests that these parameters are orthogonal. We illustrate the
+application of the proposed model through the analysis of three data
+sets with over-, under- and equidispersed count data. The study of
+distribution properties through a consideration of dispersion,
+zero-inflated and heavy tail indexes, together with the results of data
+analysis show the flexibility over standard approaches. Therefore, we
+encourage the application of the new parametrization for the analysis of
+count data in the context of COM-Poisson regression models.
+
+\clearpage
+
+%-----------------------------------------------------------------------
+% 23/08
+%-----------------------------------------------------------------------
+\addcontentsline{toc}{section}{(23/08)
+  Bivariate residual plots with simulation polygons}
+
+\begin{center}
+  {\footnotesize 23/08/2018 (Quinta-feira)}\\
+  \textbf{\large
+    Bivariate residual plots with simulation polygons}\\
+  Rafael de Andrade Moral\footnote{Maynooth University, contato:
+    \url{rafael.deandrademoral@mu.ie}}
+\end{center}
+
+When using univariate models, goodness-of-fit can be assessed through
+many different methods, including graphical tools such as half-normal
+plots with a simulation envelope. This is straightforward due to the
+notion of ordering of a univariate sample, which can readily reveal
+possible outliers. In the bivariate case, however, it is often difficult
+to detect extreme points and verify whether a sample of residuals is a
+reasonable realisation from a fitted model. We propose a new framework,
+implemented as the bivrp R package, available on the Comprehensive R
+Archive Network. Our framework uses the same principles of the
+simulation envelope in a half-normal plot, but as a simulation polygon
+for each point in a bivariate sample. By using algorithms of convex hull
+construction and polygon area reduction, we describe how our method
+works and illustrate its functionality with examples using simulated
+bivariate normal data and real bivariate count data. We show how
+different model diagnostics can produce different results and pinpoint
+potential drawbacks of our approach, such as the limitations in terms of
+computational burden and convex hull bias.
+
+\clearpage
+
+%-----------------------------------------------------------------------
+% 04/10
+%-----------------------------------------------------------------------
+\addcontentsline{toc}{section}{(04/10)
+  Modelagem de capturas em peso inflacionadas de zeros no Baixo Rio
+  Amazonas}
+
+\begin{center}
+  {\footnotesize 04/10/2018 (Quinta-feira)}\\
+  \textbf{\large
+    Modelagem de capturas em peso inflacionadas de zeros no Baixo Rio
+    Amazonas}\\
+  Júlio César Pereira\footnote{UFSCar/Sorocaba, contato:
+    \url{julio-pereira@ufscar.br}}
+\end{center}
+
+Neste trabalho desenvolvemos um modelo hierárquico bayesiano em três
+estágios para acomodar a inflação zero nas capturas resultantes da pesca
+comercial no Baixo Rio Amazonas. Inicialmente, modelamos o número de
+viagens de pesca (N), dado que N> 0 modelamos a probabilidade de sucesso
+na captura de certas espécies e finalmente, na terceira etapa, o peso
+capturado foi modelado.
+
+\clearpage
+
+%-----------------------------------------------------------------------
+% 11/10
+%-----------------------------------------------------------------------
+\addcontentsline{toc}{section}{(11/10)
+  New two-stage sampling designs based on neoteric ranked set sampling}
+
+\begin{center}
+  {\footnotesize 11/10/2018 (Quinta-feira)}\\
+  \textbf{\large
+    New two-stage sampling designs based on neoteric ranked set
+    sampling}\\
+  César Augusto Taconelli\footnote{UFPR/LEG, contato:
+    \url{taconeli@ufpr.br}}
+\end{center}
+
+Neoteric ranked set sampling (NRSS) is a recently developed sampling
+plan, derived from the well-known ranked set sampling (RSS) scheme. In
+this work, we propose and evaluate the performance of five different
+alternatives of two-stage sampling designs based on NRSS. These
+approaches configure alternatives to some other two-stage sampling
+designs based on RSS. We conducted an extensive Monte Carlo simulation
+study comprising, besides the proposed estimators, RSS, NRSS and the
+usual double ranked set sampling scheme (DRSS). The simulated results
+indicated that the new two-stage NRSS designs outperform their RSS-based
+counterparts, providing estimators for the population mean with lower
+mean square error. An application with data of the diameter and height
+of pine trees complements the study.
+
+\clearpage
+
+%-----------------------------------------------------------------------
+% 18/10
+%-----------------------------------------------------------------------
+\addcontentsline{toc}{section}{(18/10)
+  Métodos de Pesquisa e Elaboração de Questionários}
+
+\begin{center}
+  {\footnotesize 18/10/2018 (Quinta-feira)}\\
+  \textbf{\large
+  Métodos de Pesquisa e Elaboração de Questionários}\\
+  Denise Britz do N. Silva\footnote{ENCE/IBGE, contato:
+    \url{denisebritz@gmail.com}}
+\end{center}
+
+Várias das informações utilizadas na gestão pública, no desenvolvimento
+da ciência e no exercício da cidadania são provenientes de pesquisas
+amostrais ou censos. A necessidade de estatísticas de boa qualidade
+resulta na constante atenção aos métodos estatísticos para produção e
+análise da informação. Nesta palestra, apresenta-se uma introdução aos
+principais conceitos e métodos para o planejamento e a execução de
+pesquisas, bem como para a elaboração de instrumentos de
+coleta. Destaca-se, também, a importância do contínuo desenvolvimento de
+novos métodos estatísticos na área de pesquisas quantitativas.
+
+\clearpage
+
+\end{document}
