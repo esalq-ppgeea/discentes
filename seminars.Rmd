@@ -1,5 +1,6 @@
 ---
 title: Seminários Acadêmicos do PPGEEA
+date: '[livreto dos seminários](./docs/seminars2018.pdf)'
 ---
 
 ## ## {.tabset}
