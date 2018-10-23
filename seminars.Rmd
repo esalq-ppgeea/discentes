@@ -9,8 +9,45 @@ date: '[livreto dos seminários](./docs/seminars2018.pdf)'
 
 ---
 
+<strong style='color: #000'>Aumento de dados multivariados com
+diferentes distribuições de probabilidade e estruturas de correlação via
+arquétipos</strong>\
+[Pórtya Piscitelli Cavalcanti](http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4275500U9)
+(ESALQ/USP - Piracicaba)\
+**25/10 Quinta-feira (16h00)**
+
+Na Estatística Multivariada, os arquétipos são elementos extremos que
+representam bem uma amostra, ou população, e a partir dos quais todos os
+outros elementos podem ser reescritos por meio de combinações
+lineares. Por meio da Análise de Arquétipos, técnica multivariada que
+tem por objetivo reduzir a dimensionalidade das observações, é possível
+encontrar e selecionar seus arquétipos, que são combinações convexas dos
+próprios dados. A Análise de Arquétipos pode ser aplicada em diversas
+áreas do conhecimento e com diferentes utilizações dos arquétipos,
+incluindo a utilização destes no aumento de dados, isto é, no aumento do
+tamanho amostral. Na ocasião em que conjuntos de dados são
+caracterizados como incompletos ou não possuem o tamanho necessário para
+cometer um erro mínimo no procedimento de inferência estatística, tem-se
+o recurso de aumentar essa amostra. Assim, a técnica de aumento de dados
+consiste na introdução de dados não observados ou variáveis latentes por
+meio de métodos iterativos ou algoritmos de amostragem. O aumento de
+conjuntos de dados multivariados deve levar em consideração as
+diferentes distribuições de probabilidade e estruturas de covariância
+existentes entre as variáveis aleatórias. Então, o objetivo deste
+trabalho é avaliar o aumento de dados multivariados por meio dos
+arquétipos, considerando variáveis aleatórias correlacionadas com
+diferentes distribuições de probabilidade. Será realizado um estudo de
+simulação para avaliar e comparar três algoritmos para aumento de dados
+via arquétipos (A1, A2 e A3) quanto à sua eficiência; sendo testada a
+distribuição de probabilidade multivariada e as estimativas de seus
+parâmetros. Os resultados parciais permitem concluir que é possível
+aumentar o tamanho da amostra inicial em 10% com os três algoritmos, com
+destaque para A3 que permitiu até 20% de aumento.
+
+---
+
 <strong style='color: #000'>Métodos de Pesquisa e Elaboração de Questionários</strong>\
-[Denise Britz do N. Silva](https://docs.ufpr.br/~taconeli/)
+[Denise Britz do N. Silva](http://ibge.academia.edu/DeniseBritzdoNascimentoSilva)
 (ENCE/IBGE - Rio de Janeiro)\
 **18/10 Quinta-feira (10h00)**
 
@@ -31,7 +68,7 @@ novos métodos estatísticos na área de pesquisas quantitativas.
 (UFPR/LEG - Curitiba)\
 **11/10 Quinta-feira (14h00)**
 
-Neoteric ranked set sampling (NRSS) is a recently developed sampling plan, derived from the well-known ranked set sampling (RSS) scheme. In this work, we propose and evaluate the performance of five different alternatives of two-stage sampling designs based on NRSS. These approaches configure alternatives to some other two-stage sampling designs based on RSS. We conducted an extensive Monte Carlo simulation study comprising, besides the proposed estimators, RSS, NRSS and the usual double ranked set sampling scheme (DRSS).  The simulated results indicated that the new two-stage NRSS designs outperform their RSS-based counterparts, providing estimators for the population mean with lower mean square error. An application with data of the diameter and height of pine trees complements the study. 
+Neoteric ranked set sampling (NRSS) is a recently developed sampling plan, derived from the well-known ranked set sampling (RSS) scheme. In this work, we propose and evaluate the performance of five different alternatives of two-stage sampling designs based on NRSS. These approaches configure alternatives to some other two-stage sampling designs based on RSS. We conducted an extensive Monte Carlo simulation study comprising, besides the proposed estimators, RSS, NRSS and the usual double ranked set sampling scheme (DRSS).  The simulated results indicated that the new two-stage NRSS designs outperform their RSS-based counterparts, providing estimators for the population mean with lower mean square error. An application with data of the diameter and height of pine trees complements the study.
 
 ---
 
@@ -51,31 +88,36 @@ Neste trabalho desenvolvemos um modelo hierárquico bayesiano em três estágios
 tab <- tibble::tribble(
     ~"Data", ~"Ministrante", ~"Título", ~"Slides",
 
-    "17/05/2018",
-    "Cristian Villegas, Eduardo Ribeiro Jr & Roseli Leandro",
-    "Uso do Shiny para o ensino-aprendizagem de Inferência Bayesiana.",
-    "[link](http://www.leg.ufpr.br/~eduardojr/courses/seeb/)",
+    "18/10/2018",
+    "Denise Britz do N. Silva (ENCE)",
+    "Métodos de Pesquisa e Elaboração de Questionários",
+    "[link](./slides/Silva_18-10-18.pdf)",
+
+    "11/10/2018",
+    "César Augusto Taconelli (UFPR)",
+    "New two-stage sampling designs based on neoteric ranked set sampling",
+    "--",
+
+    "04/10/2018",
+    "Júlio César Pereira (UFSCar)",
+    "Modelagem de capturas em peso inflacionadas de zeros no Baixo Rio Amazonas",
+    "--",
+
+    "23/08/2018",
+    "Rafael Moral (Maynooth)",
+    "Bivariate residual plots with simulation polygons",
+    "[link](./slides/Moral_23-08-18.pdf)",
 
     "16/08/2018",
     "Eduardo Ribeiro Jr (ESALQ)",
     "Reparametrization of COM-Poisson Regression Models",
     "[link](./slides/RibeiroJr_16-08-18.pdf)",
 
-    "23/08/2018",
-    "Rafael Moral (Maynooth)",
-    "Bivariate residual plots with simulation polygons",
-    "[link](./slides/Moral_23-08-18.pdf)",
-    
-    "04/10/2018",
-    "Júlio César Pereira (UFSCar)",
-    "Modelagem de capturas em peso inflacionadas de zeros no Baixo Rio Amazonas",
-    "--",
-    
-    "11/10/2018",
-    "César Augusto Taconelli (UFPR)",
-    "New two-stage sampling designs based on neoteric ranked set sampling",
-    "--"
-    
+    "17/05/2018",
+    "Cristian Villegas, Eduardo Ribeiro Jr & Roseli Leandro",
+    "Uso do Shiny para o ensino-aprendizagem de Inferência Bayesiana.",
+    "[link](http://www.leg.ufpr.br/~eduardojr/courses/seeb/)"
+
 )
 
 knitr::kable(tab,
